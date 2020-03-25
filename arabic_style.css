@@ -1,0 +1,488 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  background: #121212;
+}
+
+
+body {
+  background: url(hero.jpg);
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-size: cover;
+}
+.git {
+  visibility:collapse;
+}
+header {
+
+  background: #323232;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+/* Content Box Start */
+.container {
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 230px;
+  margin-top: 50px;
+}
+
+.container .box {
+  position: relative;
+  width: 320px;
+  background: linear-gradient(45deg, #f05a4f, #f4c030);
+  opacity: 0.85;
+  padding: 140px 40px 60px;
+  box-shadow: 0 15px 45px rgba(23, 0, 0, 0.9);
+  border-radius: 20px;
+}
+
+.container .box:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #036eb7, #64eaff);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+
+.container .box:hover:before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+
+.container .box h2 {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  font-size: 2.5em;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .box:hover h2 {
+  opacity: 1;
+  color:  #fff;
+  transform: translateY(-40px);
+}
+
+.container .box h3 {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+
+}
+
+.container .box p {
+  position: relative;
+  z-index: 2;
+  color: #555;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.container .box:hover h3, .container .box:hover p {
+  color: #fff;
+}
+
+
+/* Content Box End */
+
+header h2 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 2em;
+  bottom: 40px;
+  right: 0%;
+}
+
+.dropdown-content .home {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 10em;
+  bottom: 40px;
+  right: 0%;
+}
+.dropdown-content .mission{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 20em;
+  bottom: 40px;
+  right: 0%;
+}
+
+.dropdown-content .about{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 27em;
+  bottom: 40px;
+  right: 0%;
+}
+
+.dropdown-content a:hover {
+  color: lightgreen;
+}
+.dropdown-content .follow {
+  /*Removes underlined link in each word*/
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: 10em;
+  bottom: 40px;
+  left: 0%;
+}
+
+.dropdown-content .share {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: 15em;
+  bottom: 40px;
+  left: 0%;
+}
+
+.dropdown-content .englishBack {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: 4em;
+  bottom: 40px;
+  left: 0%;
+}
+
+.dropdown-content a:hover {
+  color: lightgreen;
+}
+header a {
+  text-decoration: none;
+}
+
+.header h1 {
+  margin-left: 15px;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 45px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+}
+
+
+.copyright {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 2em;
+  bottom: 40px;
+  right: 0%;
+}
+
+.contacts {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: 2em;
+  bottom: 40px;
+  left: 0%;
+}
+
+.tou {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-left: 8em;
+  bottom: 40px;
+  left: 0%;
+}
+footer {
+  background-color: #141414;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+footer a {
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+footer a:hover {
+  color: white;
+}
+.covid19 {
+  margin: 0%;
+  padding: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  opacity: 0.7;
+}
+
+.covid19 img {
+  height: 540px;
+  width: 540px;
+  animation: rotateRing 15s linear infinite;
+  margin-left: 30px;
+}
+
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Iphone X Portrait*/
+@media only screen and (max-width: 375px) {
+  .covid19 img {
+    height: 220px;
+    width: 220px;
+    animation: rotateRing 15s linear infinite;
+    margin-left: 1px;
+  }
+
+  .header h1 {
+    margin-left: 15px;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 170px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  header h2 {
+    margin-right: 250px;
+  }
+  .copyright {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 8px;
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-right: 2em;
+    bottom: 40px;
+    right: 0%;
+  }
+
+  .contacts {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 8px;
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-left: 2em;
+    bottom: 40px;
+    left: 0%;
+  }
+
+  .tou {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 8px;
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-left: 8em;
+    bottom: 40px;
+    left: 0%;
+  }
+
+  .dropdown-content {
+    visibility: hidden;
+  }
+  .git {
+    visibility: visible;
+  }
+
+  #shareLink {
+    z-index: 1;
+    top: 25px;
+    font-size: 30px;
+    color: white;
+    transition: all 0.5s;
+    margin-left: 260px;
+    margin-top: 39px;
+  }
+
+  #homeSymbol {
+    top: 25px;
+    font-size: 30px;
+    color: white;
+    transition: all 0.5s;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  .sidebar {
+    z-index: 1;
+    position: fixed;
+    left: -250px;
+    width: 180px;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1)
+    , rgba(0, 0, 0, 1));
+    transition: all 0.5s ease;
+  }
+
+  .sidebar ul li a {
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+    text-decoration: none;
+    font-family: "Roboto";
+    text-align: center;
+  }
+
+  ul li:hover a {
+    z-index: 1;
+    padding-left: 60px;
+  }
+
+  #check {
+    z-index: 1;
+    display: none;
+  }
+
+  label #btn, label #cancel {
+    z-index: 1111;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px; /*Determines the amount of curves being put to each corner*/
+  }
+
+  label #btn {
+    z-index: 1;
+    left: 40px;
+    top: 25px;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+    margin-left: 250px;
+    margin-top: 10px;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+  }
+
+  #check:checked ~ .sidebar {
+    z-index: 1;
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    z-index: 1;
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #check:checked ~ label #cancel {
+    z-index: 1;
+    left: 180px;
+  }
+
+  .share-buttons {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
