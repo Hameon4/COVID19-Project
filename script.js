@@ -46,47 +46,7 @@
         y: 20,
         ease: Expo.easeInOut
       });
-      // TweenMax.staggerFrom(".media ul li", 2, {
-      //       delay: 8.7,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Power3.easeInOut
-      // }, 0.1);
-      //
-      // TweenMax.from(".menu", 3, {
-      //       delay: 8.8,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // });
-      //
-      // TweenMax.from(".p1", 3, {
-      //       delay: 9,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // });
-      //
-      // TweenMax.from(".p2", 3, {
-      //       delay: 9.2,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // });
-      //
-      // TweenMax.from("#one", 3, {
-      //       delay: 9.4,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // });
-      //
-      // TweenMax.from("#two", 3, {
-      //       delay: 9.7,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // });
+      
 
       var t1 = new TimelineMax();
 
